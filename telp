@@ -1,0 +1,22 @@
+#!bin/bash
+clear
+
+echo "•=====================================•"
+echo " Author : RIZKI                        "
+echo "•=====================================•"
+figlet TELp  | lolcat
+echo '
+[1], Prank
+[2], Exit Tools
+'
+echo
+read -p "Masukan Pilihan Anda : " pil
+if [[ $pil == 1 ]]; then
+read -p "Masukan No Target : " nomor
+link="https://id.jagreward.com/member/verify-mobile/$nomor"
+curl -s $link
+else
+echo 'Terimakasih Telah Memakai Tools GW YA OM'
+exit
+fi
+echo
